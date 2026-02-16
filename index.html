@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopwatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Stopwatch</h1>
+
+<div class="circle">
+    <svg width="250" height="250">
+        <circle cx="125" cy="125" r="110" class="bg"></circle>
+        <circle cx="125" cy="125" r="110" class="progress" id="progress"></circle>
+    </svg>
+    <div class="time" id="display">00:00.00</div>
+</div>
+
+<div class="buttons">
+    <button onclick="reset()">⟲</button>
+    <button onclick="startStop()" id="startBtn">▶</button>
+    <button onclick="lap()">Lap</button>
+</div>
+
+<ul id="laps"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
